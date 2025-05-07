@@ -61,7 +61,7 @@ public class Employee {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "department_id", nullable = false)
     private Department department;
 
